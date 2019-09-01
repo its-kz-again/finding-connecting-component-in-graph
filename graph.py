@@ -18,7 +18,7 @@ class Graph:
       #add an edge to graph
       def addEdge(self,u,v):
           self.graph[u].append(v)
-      #dfs(depth first search) algorithm
+      #dfs(depth first search) function
       def DFS(self,v,mark):
           mark[v]=True
           self.l.append(v+1)
@@ -56,7 +56,7 @@ g.check(mark)
 for i in g.cmp:
     print(i)
 
-# algorithm DFS :
+# DFS algorithm :
 # the algorithm is executed recursively,
 # assuming that all vertices are first
 # in the white graph,we consider arbitrary
